@@ -34,7 +34,7 @@ m12Btn.onclick = () => changeTextMonth("m12");
 m13Btn.onclick = () => changeTextMonth("m13");
 
 function createPathStrings(filename) {
-  const basePath = "../earth/skybox/";
+  const basePath = "earth/skybox/";
   const baseFilename = basePath + filename;
   const fileType = ".png";
   const sides = ["ft", "bk", "up", "dn", "rt", "lf"];
@@ -63,11 +63,11 @@ function setSkyBox() {
 
 // 加载基础地球
 function setEarthBox() {
-  var earth_texture = new THREE.TextureLoader().load('../earth/earth_hd.jpg');
+  var earth_texture = new THREE.TextureLoader().load('earth/earth_hd.jpg');
   var earth_geometry = new THREE.SphereGeometry(5, 64, 64);
 
-  var earth_bump = new THREE.TextureLoader().load("../earth/bump.jpeg");
-  var earth_specular = new THREE.TextureLoader().load("../earth/spec.jpeg");
+  var earth_bump = new THREE.TextureLoader().load("earth/bump.jpeg");
+  var earth_specular = new THREE.TextureLoader().load("earth/spec.jpeg");
 
   var earth_material = new THREE.MeshBasicMaterial({
     shininess: 40,
@@ -111,7 +111,7 @@ function init() {
   setEarthBox();
 
   // 加载辐射图
-  loadTexture("../earth/1.png");
+  loadTexture("earth/1.png");
   scene.add(datas);
 
   // 渲染设置
@@ -135,55 +135,55 @@ function init() {
 function changeTextMonth(month) {
   switch (month) {
     case "m1":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/1.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/1.png");
       datas.material.needsUpdate = true;
       break;
     case "m2":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/2.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/2.png");
       datas.material.needsUpdate = true;
       break;
     case "m3":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/3.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/3.png");
       datas.material.needsUpdate = true;
       break;
     case "m4":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/4.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/4.png");
       datas.material.needsUpdate = true;
       break;
     case "m5":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/5.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/5.png");
       datas.material.needsUpdate = true;
       break;
     case "m6":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/6.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/6.png");
       datas.material.needsUpdate = true;
       break;
     case "m7":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/7.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/7.png");
       datas.material.needsUpdate = true;
       break;
     case "m8":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/8.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/8.png");
       datas.material.needsUpdate = true;
       break;
     case "m9":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/9.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/9.png");
       datas.material.needsUpdate = true;
       break;
     case "m10":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/10.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/10.png");
       datas.material.needsUpdate = true;
       break;
     case "m11":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/11.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/11.png");
       datas.material.needsUpdate = true;
       break;
     case "m12":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/12.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/12.png");
       datas.material.needsUpdate = true;
       break;
     case "m13":
-      datas.material.map = THREE.ImageUtils.loadTexture("../earth/13.png");
+      datas.material.map = THREE.ImageUtils.loadTexture("earth/13.png");
       datas.material.needsUpdate = true;
       break;
     default:
