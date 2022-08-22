@@ -34,7 +34,7 @@ m12Btn.onclick = () => changeTextMonth("m12");
 m13Btn.onclick = () => changeTextMonth("m13");
 
 function createPathStrings(filename) {
-  const basePath = "../../earth/skybox/";
+  const basePath = "https://pudding.nousbuild.com/earth3d-radiation-threejs/earth3d-demo1/earth/skybox/";
   const baseFilename = basePath + filename;
   const fileType = ".png";
   const sides = ["ft", "bk", "up", "dn", "rt", "lf"];
