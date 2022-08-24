@@ -5,10 +5,10 @@
 </p>
 <p align="center">
   <a href="https://threejs.org/">
-      <img src="https://img.shields.io/badge/Three.js-r129-blue.svg">
+      <img src="https://img.shields.io/badge/Three.js-r129-yellow.svg">
   </a>
-  <a href="https://github.com/pudding0503/earth3d-radiation-threejs/actions/workflows/pages/pages-build-deployment">
-  	<img alt="Page" src="https://github.com/pudding0503/earth3d-radiation-threejs/actions/workflows/pages/pages-build-deployment/badge.svg">
+  <a href="https://github.com/pudding0503/earth3d-radiation-threejs/releases">
+  	<img src="https://img.shields.io/github/v/release/pudding0503/earth3d-radiation-threejs?label=version" />
   </a>
   <a href="https://github.com/pudding0503/earth3d-radiation-threejs/issues">
   	<img alt="Issues" src="https://img.shields.io/github/issues/pudding0503/my-git-bash.svg?color=F48D73">
@@ -16,8 +16,10 @@
   <a href="https://github.com/pudding0503/earth3d-radiation-threejs/blob/main/LICENSE">
   	<img alt="Github" src="https://img.shields.io/github/license/pudding0503/my-git-bash.svg?logo=github">
   </a>
+  <a href="https://github.com/pudding0503/earth3d-radiation-threejs/actions/workflows/pages/pages-build-deployment">
+  	<img alt="Page" src="https://github.com/pudding0503/earth3d-radiation-threejs/actions/workflows/pages/pages-build-deployment/badge.svg">
+  </a>
 </p>
-
 ### 1.简介
 
 本例采用了 Three.js 库，这是一个非常出色的 WebGL 渲染的 JavaScript 库。使用 Three.js 绘制 3D 地球进行 netCDF 数据展示，原理与 Google Earth 极为相似，所需的信息也跟 KML 文件没有太大差别。
