@@ -115,7 +115,7 @@ function init() {
     controls.maxDistance = 200;
     controls.minZoom = 0.5;
     controls.maxZoom = 2;
-    controls.rotateSpeed = 0.4;
+    controls.rotateSpeed = 0.8;
 }
 
 function animate() {
