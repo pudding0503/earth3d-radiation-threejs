@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<!-- Title -->
+	<title>Demo 4：地球3D太阳辐射数据演示 1970-1972年</title>
+
+	<!-- Meta -->
+	<meta http-equiv="content-type" content="text/html" charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-language" content="zh-cn">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
+</head>
+
+<body id="body">
+	<div class="header">
+		<div class="main">
+			<div class="logo nodrag"><a href="http://buildingdata.xauat.edu.cn/"><img src="logo.svg"></a></div>
+			<div class="logo2 nodrag"><a href="https://www.xauat.edu.cn/"><img src="favicon.png"></a></div>
+		</div>
+	</div>
+
+	<p id="msg">Demo 4：地球3D太阳辐射数据演示 1970-1972年</p>
+
+	<div class="month-select" id="month-select">
+		<button class="btn m1" id="m1">▶</button>
+		<button class="btn m2" id="m2">↻</button>
+	</div>
+
+	<p class="nodrag" id="msg-left">1970 年</p>
+	<p class="nodrag" id="msg-left-loading">加载中 ...</p>
+	<p class="nodrag" id="msg-right">太阳辐射值</p>
+
+</body>
+
+<!-- JS -->
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/three.min.js"></script>
+<script src="assets/js/d3.v6.js"></script>
+<script type="module" src="assets/js/main.js"></script>
+
+<script src="assets/js/BufferGeometryUtils.js"></script>
+<script>
+	$(document).ready(function () {
+		$("#earth").dblclick(function () {
+			setTimeout(function () {
+				$("#msg-left").fadeOut("slow");
+				$("#msg-right").fadeOut("slow");
+				$("#msg-left-loading").fadeIn("slow");
+				$("#earth").animate({ zoom: "1.3" });
+			}, 500);
+
+			setTimeout(function () {
+				$("#earth").fadeOut("slow");
+				$("#msg-left-loading").fadeOut("slow");
+				$("body").css({
+					"background": "#fff",
+					"-webkit-transition": "background-color 0.4s ease",
+					"-moz-transition": "background-color 0.4s ease",
+					"-o-transition": "background-color 0.4s ease",
+					"transition": "background-color 0.4s ease"
+				});
+			}, 2000);
+
+			setTimeout(function () {
+				$(location).attr("href", "map.html")
+			}, 2000);
+		});
+	});
+</script>
+
+</html>

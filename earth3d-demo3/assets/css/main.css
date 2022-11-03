@@ -1,0 +1,251 @@
+/* main web */
+body {
+  background-image: url("../other_img/bg.jpg");
+  background-position: center center;
+  overflow: hidden;
+  background-size: cover;
+}
+
+#msg {
+  position: absolute;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  font-family: "-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif";
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+.header {
+  margin: 0 auto;
+  width: 100%;
+  height: 70px;
+  background: #efefef;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.main {
+  margin: 0 auto;
+  width: 96%;
+  height: 70px;
+}
+
+.logo {
+  float: left;
+  display: block;
+  height: 76px;
+  margin-top: 4px;
+}
+
+.logo2 {
+  float: right;
+  display: block;
+  height: 76px;
+  margin-top: 4px;
+}
+
+.logo img,
+.logo2 img {
+  display: block;
+  height: 60px;
+}
+
+/* banner */
+@media all and (max-width:1580px) {
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .main {
+    margin: 0 auto;
+    width: 98%;
+    height: 70px;
+  }
+
+  .logo {
+    float: left;
+    display: block;
+    height: 55px;
+    margin-top: 5px;
+  }
+
+  .logo img {
+    display: block;
+    height: 55px;
+  }
+}
+
+@media all and (max-width:1420px) {
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .main {
+    margin: 0 auto;
+    width: 98%;
+    height: 70px;
+  }
+
+  .logo {
+    float: left;
+    display: block;
+    height: 55px;
+    margin-top: 10px;
+  }
+
+  .logo img {
+    display: block;
+    height: 48px;
+  }
+}
+
+@media all and (max-width:1360px) {
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+@media all and (max-width:1280px) {
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+}
+
+@media all and (max-width:1024px) {
+  * {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .header {
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    position: fixed;
+    z-index: 999999999;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .main {
+    margin: 0 auto;
+    width: 98%;
+    height: 60px;
+  }
+
+  .logo {
+    float: left;
+    display: block;
+    height: 40px;
+    margin-top: 12px;
+  }
+
+  .logo img {
+    display: block;
+    height: 40px;
+  }
+
+  .month-select {
+    position: fixed;
+    top: 150px;
+    left: 30px;
+  }
+}
+
+/* earth3d */
+#stats {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 80px;
+}
+
+.month-select {
+  position: fixed;
+  top: 80px;
+  right: 10px;
+}
+
+.btn {
+  margin: 2px 0 2px 0;
+  background: white;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#msg-left {
+  position: absolute;
+  background: transparent;
+  color: #ffffff90;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  font-family: "-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif";
+  top: 30%;
+  left: 2%;
+}
+
+#msg-left-loading {
+  position: absolute;
+  background: transparent;
+  color: #ffffff90;
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  font-family: "-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif";
+  top: 30%;
+  left: 4%;
+  display: none;
+}
+
+#msg-right {
+  position: absolute;
+  background: transparent;
+  color: #ffffff90;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  font-family: "-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif";
+  top: 30%;
+  right: 6%;
+}
+
+.nodrag {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* map */
+#map {
+  display: none;
+}
