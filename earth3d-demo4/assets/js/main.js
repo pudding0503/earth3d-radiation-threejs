@@ -2,9 +2,9 @@
 // import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
 
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.125.0/examples/jsm/controls/OrbitControls.js";
-import data135_1970 from "/data/1970.js";
-import data135_1971 from "/data/1971.js";
-import data135_1972 from "/data/1972.js";
+import data135_1970 from "https://pudding.nousbuild.com/earth3d-radiation-threejs/earth3d-demo4/data/1970.js";
+import data135_1971 from "https://pudding.nousbuild.com/earth3d-radiation-threejs/earth3d-demo4/data/1971.js";
+import data135_1972 from "https://pudding.nousbuild.com/earth3d-radiation-threejs/earth3d-demo4/data/1972.js";
 
 // 全局变量
 var camera, scene, renderer, controls;
